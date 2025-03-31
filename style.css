@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');/* google fonts : عشان نوع الخط مش موجود  ف عملت امبورت*/
+body{
+    font-family: "Mulish", sans-serif;
+}
 
+h1{/* عشان هو زي جلوبال حطيته بالاول بس مش فرقيه وين ما ينحط*/
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+    color: black;
+}
+:root{
+    --gray-light :#7D7987;
+    --primary:#458FF6;
+}
+p{
+    color: var(--gray-light);
+
+}
 *{
     padding: 0;
     margin: 0;
@@ -35,4 +53,49 @@ a{
 }
 nav{
     padding: 20px 0px;
+}
+.header-content p{
+    font-size: 21px;
+    line-height: 32px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+
+}
+.btn{
+    min-width: 200px;
+    height: 60px;
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+}
+.header-content .btn{
+   
+    background-color: var(--primary);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+header .flex{
+    gap: 109px;
+}
+.header-img img{
+    width: 100%;/*عشان اخلي الحجم بنفس المحتوى واخلي علاقته مع الاب*/
+}
+.header-content{/*لانه مش ماخذ النص بالضبط ماخذ عرض اقل من النص حسب ما هو مبين*/
+    width: 40%;
+}
+
+/* يضل محافظ على السنتره و  عشان  لما بدي اكبر الشاشه عشان يضل الاشي منطقي*/
+header{
+    height: 100vh;
+}
+header .container {
+    height: 100vh;
+}
+
+header .flex{
+    height: 100vh;
 }
