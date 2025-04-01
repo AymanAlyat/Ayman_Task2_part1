@@ -99,3 +99,35 @@ header .container {
 header .flex{
     height: 100vh;
 }
+.images_main img {
+    width: 650px;
+    height: 477px;
+    
+}
+.content_main p{
+    margin-top: 59px;
+    margin-bottom: 37px;
+}
+main .flex{
+    gap: 142px;
+}
+.content_main .btn{
+   
+    border:solid 1.4px;
+    border-color:var(--primary) ;
+    background-color: white;
+    color: var(--primary);
+    
+}
+.content_main h2 {
+    width: 481px;
+    height: 112px;
+    font-size: 36px;
+    font-weight: 700;
+
+}
+.content_main p{
+    width: 370px;
+    height: 120px;
+}
+
