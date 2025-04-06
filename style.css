@@ -112,12 +112,19 @@ main .flex{
     gap: 142px;
 }
 .content_main .btn{
-   
     border:solid 1.4px;
     border-color:var(--primary) ;
     background-color: white;
     color: var(--primary);
-    
+    transition: background-color 0.5s ease-in-out ;
+    -webkit-transition: background-color 0.5s ease-in-out ;
+    -moz-transition: background-color 0.5s ease-in-out ;
+    -ms-transition: background-color 0.5s ease-in-out ;
+    -o-transition: background-color 0.5s ease-in-out ;
+}
+.content_main .btn:hover{
+    background-color: #458FF6;
+    color: white;
 }
 .content_main h2 {
     width: 481px;
