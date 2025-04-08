@@ -1,93 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trafalgar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
     <nav>
-       <div class="container">
-       
-           <div class="flex">
-            <img src="logo.svg" alt="Testiman">
-            <ul>
-                <li><a href="" class="Active Nav-link">Home</a> </li>
-                <li><a href="" class="Nav-link">Find a doctor</a> </li>
-                <li><a href=""class="Nav-link">Apps</a> </li>
-                <li><a href=""class="Nav-link">Testimanials</a> </li>
-                <li><a href=""class="Nav-link">About us</a> </li>
-                
-            </ul>
-         </div> 
+      <div class="container">
+        <div class="flex">
+          <img src="logo.svg" alt="Testiman" />
+          <input type="checkbox" hidden id="menu-check" />
+          <label for="menu-check"
+            ><i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+          </label>
+
+          <ul>
+            <li><a href="" class="Active Nav-link">Home</a></li>
+            <li><a href="" class="Nav-link">Find a doctor</a></li>
+            <li><a href="" class="Nav-link">Apps</a></li>
+            <li><a href="" class="Nav-link">Testimanials</a></li>
+            <li><a href="" class="Nav-link">About us</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
     <header>
-       
-        <div class="container">
-            <div class="flex">
-            <div class="header-content">
-                
-                <h1>Virtual healthcare for you</h1>
-                <p >Trafalgar provides progressive, and affordable 
-                    healthcare, accessible on mobile and online 
-                    for everyone</p>
-                    <button class="btn">Consult today</button>
-                    
-            </div>
+      <div class="container">
+        <div class="flex">
+          <div class="header-content">
+            <h1>Virtual healthcare for you</h1>
+            <p>
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone
+            </p>
+            <button class="btn">Consult today</button>
+          </div>
 
-            <div class="header-img">
-               
-                <img src="images.png" alt="header-image">
-            </div>
+          <div class="header-img">
+            <img src="images.png" alt="header-image" />
+          </div>
         </div>
-          
-        </div>
-
-
+      </div>
     </header>
     <main>
-       
-   <section>
-        
-
-
+      <section class="services">
+        <img src="element.png" alt="" class="element">
+        <img src="Vector.png" alt="" class="card-bg">
         <div class="container">
-            <div class="flex">
- 
-            <div class="images_main">
+          
+          <h2>Our services</h2>
+          <img src="Rectangle 11.png" alt="" class="image1"/>
+          <p>
+            We provide to you the best choiches for you. Adjust it to your
+            health needs and make sure your undergo treatment with our highly
+            qualified doctors you can consult with us which type of service is
+            suitable for your health
+          </p>
+
+          <div class="cards flex">
+            <div class="card">
+                <img src="Frame (1).svg" alt="">
+                <h3>Search doctor</h3>
+                <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+            </div>
+            <div class="card">
+                <img src="Frame.png" alt="">
+                <h3>Online pharmacy</h3>
+                <p>Buy  your medicines with our mobile application with a simple delivery system</p>
+            </div>
+            <div class="card">
+                <img src="f2.png" alt="">
+                <h3>Consultation</h3>
+                <p>Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="card">
+                <img src="Frame (2).png" alt="">
+                <h3>Details info</h3>
+                <p>Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="card">
+                <img src="Frame (3).png" alt="">
+                <h3>Emergency care</h3>
+                <p>You can get 24/7 urgent care for yourself or your children and your
+                    lovely family</p>
+            </div>
+            <div class="card">
+                <img src="Group (1).png" alt="">
+                <h3>Tracking</h3>
+                <p>Track and save your medical history and health data </p>
+            </div>
+          </div>
+          <button class="btn btn1">learn more</button>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <img src="group55.svg" alt="" class="square">
+        <img src="group50.png" alt="" class="square2">
+        <div class="container">
+       
+          <h2>What our customer are saying</h2>
+          <img src="Rectangle 17.svg" alt="">
+          <div class="flex testimonial">
+
              
-                <img src="images2.png" alt="image main">
-            </div>
-            <div class="content_main">
-                <h2>Leading healthcare providers</h2>
-                <img src="Rectangle 11.png" alt="hmages in h2">
-                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
-                    in the solutions we deliver</p>
-                    <button class="btn">learn more</button>
 
+
+
+            <div class="flex content" >
+              <img src="Group 5.png" alt="">
+              <div>
+              <h3>Edward Newgate</h3>
+              <h4>Founder Circle</h4>
             </div>
+            </div>
+
+          <q class="qoute">“Our dedicated patient engagement app and 
+            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+            or administrative hassle) and securely”</q>
         </div>
         </div>
 
 
-    </section>
-
-<section class="services">
-
-   
 
 
 
 
 
-</section>
 
-    
 
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>

@@ -17,6 +17,10 @@ p{
     color: var(--gray-light);
 
 }
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 *{
     padding: 0;
     margin: 0;
@@ -53,6 +57,11 @@ a{
 }
 nav{
     padding: 20px 0px;
+    position: fixed;
+    width: 100%;/* لانه لما حطيت فكسد صار العرض حسب المحتوى ولزقن ببعض*/
+    top: 0;
+    background-color: antiquewhite;
+    z-index: 999999999999;
 }
 .header-content p{
     font-size: 21px;
@@ -60,6 +69,9 @@ nav{
     margin-top: 25px;
     margin-bottom: 45px;
 
+}
+label .open , label .close{
+    display: none;
 }
 .btn{
     min-width: 200px;
@@ -83,6 +95,7 @@ header .flex{
 }
 .header-img img{
     width: 100%;/*عشان اخلي الحجم بنفس المحتوى واخلي علاقته مع الاب*/
+    margin-top: 50px;
 }
 .header-content{/*لانه مش ماخذ النص بالضبط ماخذ عرض اقل من النص حسب ما هو مبين*/
     width: 40%;
@@ -138,3 +151,149 @@ main .flex{
     height: 120px;
 }
 
+/*
+#menu-check:checked +ul{/* هاي لما اكبس رح يتم التاثير على يو ال بدون ما اكبس مش رح يتاثر هس شغلها بملف الميديا*/
+  /*  background-color: red;*/
+
+
+
+/*///////////////////////////////////////////////////////////*/
+
+.services{
+    text-align: center;/* عشان اسنتر المحتوى*/
+}
+ .image1{
+    margin-top: 26px;
+    margin-bottom: 33px;
+}
+.cards{
+    margin-top: 5rem;/* هي نفس 80 بكسل لكن الريم داينمك على ذمتها*/
+    text-align: start;/* لانه النص جاي مسنتر ورثانها وانا بدي اياه بالبدايه*/
+   margin-bottom: 3rem;
+   
+}
+.cards.flex{
+    flex-wrap: wrap;
+    gap: 37px;
+}
+
+.card{
+    padding: 37px 54px;
+    max-width: 350px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 10px 40px 50px 0 #E5E9F666;
+    background-color: white;
+}
+.cards img{
+   padding-bottom: 30px;
+}
+
+/*
+.card{
+  text-align: start;
+  padding:  37px 54px ;
+  margin-bottom: 3rem;
+  background-color: #ffff;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px 0 #E5E9F666;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+}
+.cards{
+
+
+  margin-top: 5rem;
+
+
+
+
+}
+.cards.flex{
+  flex-wrap: wrap;
+  gap: 37px;
+ 
+}
+
+
+*/
+.services .card-bg{
+ position: absolute;
+ left: 0;
+ z-index: -1;
+ top: 200px;
+ width: 100%;
+}
+.services{
+    position: relative;
+}
+.services .element{
+    position: absolute;
+    bottom: 250px;
+    right: 100px;
+    z-index: -1;
+}
+.btn1{
+   border-color: #458FF6;
+   color: #458FF6;
+   text-transform: capitalize;
+   background-color: white;
+   transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -ms-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+}
+.btn1:hover{
+    background-color: #458FF6;
+    color: white;
+}
+.testimonials{
+    background:linear-gradient(#67C3F3,#5A98F2) ;
+    color: white;
+    max-width: 1120px;
+    /*اعطيتهاعرضوبعدينماردناوتوعشانتيجيبالنص*/
+    margin: auto;
+    border-radius:24px ;
+    -webkit-border-radius:24px ;
+    -moz-border-radius:24px ;
+    -ms-border-radius:24px ;
+    -o-border-radius:24px ;
+}
+.testimonials .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 29px;
+}
+.testimonial .content , .testimonial .qoute{
+    width: 50%;
+}
+.testimonial .content h3{
+    width: 183px;
+    margin-bottom: 20px;
+}
+.testimonial .content{
+    gap: 29px;
+}
+.testimonials{
+    position: relative;
+}
+.testimonials .square{
+    position: absolute;
+    top:-19px;
+    right:-53px;
+}
+.testimonials .square2{
+    position: absolute;
+    left: -60px;
+    bottom: 50px;
+}

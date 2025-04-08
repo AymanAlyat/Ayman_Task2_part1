@@ -11,10 +11,38 @@
     align-items: center;
     padding: 20px 0;/*top , buttom  يعني انا حبيت اوسع عليها*/
     backdrop-filter: blur(10px);/* هيك ببين انه اللي وراها مغبش بس لازم لون الباك جراوند يكون شفاف*/
-   
+   display: none;/* فكرخ خبيثه انه لما اكبس يظهر القائمه ف لازم تكون بالاصل مخفيه*/
    }
    nav{
-    position: relative;
+   /* position: relative; */
+    position: fixed;
    }
     
-} /* سااااعه وخمس دقاااايق*/
+   #menu-check:checked ~ ul{/*الاخ الشقيق*/
+    display: flex;/* عشان لما اكبس يظهر القائمه*/
+   }
+  label .open{
+    display: inherit;
+  }
+  
+   #menu-check:checked ~ label .open{
+    display: none;
+   }
+   #menu-check:checked ~ label .close{
+    display:inherit;/*inhirit :نفس المبدأ*/
+   }
+   /*//////////////////////////////////////////////////////////////////////////////////*/
+   header .flex{/* انا شغال بالهيدر عشان هيك مسكت الفليكس تاع الهيدر بس*/
+    flex-direction: column-reverse;
+   margin-top: 400px;
+   
+   }
+   .header-content{
+    width: 100%;
+   }
+   .services .card{
+    max-width: 100%;
+   }
+  
+
+} 
